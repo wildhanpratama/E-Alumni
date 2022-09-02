@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../mnt/CED40BDFD40BC8A3/xampp/htdocs/r/2022-wildan-alumni/android/app/src/main/res/layouts/activity/layout/home_page_activity.xml" value="0.1" />
+        <entry key="../../../../../mnt/CED40BDFD40BC8A3/xampp/htdocs/r/2022-wildan-alumni/android/app/src/main/res/layouts/activity/layout/login_activity.xml" value="0.25" />
+        <entry key="../../../../../mnt/CED40BDFD40BC8A3/xampp/htdocs/r/2022-wildan-alumni/android/app/src/main/res/layouts/data_alumni/layout/data_alumni_tambah.xml" value="0.25" />
+        <entry key="../../../../../mnt/CED40BDFD40BC8A3/xampp/htdocs/r/2022-wildan-alumni/android/app/src/main/res/layouts/data_alumni/layout/data_alumni_tampil_v2.xml" value="0.1734375" />
+        <entry key="../../../../../mnt/CED40BDFD40BC8A3/xampp/htdocs/r/2022-wildan-alumni/android/app/src/main/res/layouts/data_berita/layout/data_berita_tambah.xml" value="0.25" />
+        <entry key="../../../../../mnt/CED40BDFD40BC8A3/xampp/htdocs/r/2022-wildan-alumni/android/app/src/main/res/layouts/data_karyawan/layout/data_karyawan_tambah.xml" value="0.1734375" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file:///mnt/CED40BDFD40BC8A3/xampp/htdocs/r/2022-wildan-alumni/android" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

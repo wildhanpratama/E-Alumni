@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/nav_kiri1"
+                android:icon="@drawable/nav1"
+                android:title="@string/menu_kiri1" />
+            <item
+                android:id="@+id/nav_kiri2"
+                android:icon="@drawable/nav2"
+                android:title="@string/menu_kiri2" />
+            <item
+                android:id="@+id/nav_kiri3"
+                android:icon="@drawable/nav3"
+                android:title="@string/menu_kiri3" />
+            <item
+                android:id="@+id/nav_kiri4"
+                android:icon="@drawable/nav4"
+                android:title="@string/menu_kiri4" />
+            <item
+                android:id="@+id/nav_kiri5"
+                android:icon="@drawable/nav5"
+                android:title="@string/menu_kiri5" />
+        </menu>
+    </item>
+
+
+    <item android:title="Master Data">
+        <menu>
+            <item
+                android:id="@+id/nav_data_admin"
+                android:icon="@drawable/page"
+                android:title="Data Admin " />
+            <item
+                android:id="@+id/nav_data_akreditas"
+                android:icon="@drawable/page"
+                android:title="Data Akreditas " />
+            <item
+                android:id="@+id/nav_data_alumni"
+                android:icon="@drawable/page"
+                android:title="Data Alumni " />
+            <item
+                android:id="@+id/nav_data_berita"
+                android:icon="@drawable/page"
+                android:title="Data Berita " />
+            <item
+                android:id="@+id/nav_data_jawaban_akreditas"
+                android:icon="@drawable/page"
+                android:title="Data Jawaban Akreditas " />
+            <item
+                android:id="@+id/nav_data_karyawan"
+                android:icon="@drawable/page"
+                android:title="Data Karyawan " />
+            <item
+                android:id="@+id/nav_data_kenangan"
+                android:icon="@drawable/page"
+                android:title="Data Kenangan " />
+            <item
+                android:id="@+id/nav_data_komentar_berita"
+                android:icon="@drawable/page"
+                android:title="Data Komentar Berita " />
+            <item
+                android:id="@+id/nav_data_komentar_kenangan"
+                android:icon="@drawable/page"
+                android:title="Data Komentar Kenangan " />
+            <item
+                android:id="@+id/nav_data_like_berita"
+                android:icon="@drawable/page"
+                android:title="Data Like Berita " />
+            <item
+                android:id="@+id/nav_data_like_kenangan"
+                android:icon="@drawable/page"
+                android:title="Data Like Kenangan " />
+            <item
+                android:id="@+id/nav_data_pertanyaan_akreditas"
+                android:icon="@drawable/page"
+                android:title="Data Pertanyaan Akreditas " />
+            <item
+                android:id="@+id/nav_data_sekolah"
+                android:icon="@drawable/page"
+                android:title="Data Sekolah " />
+
+            
+        </menu>
+    </item>
+</menu>

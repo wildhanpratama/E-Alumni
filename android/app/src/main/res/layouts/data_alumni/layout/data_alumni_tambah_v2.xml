@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@drawable/background_input"
+                                                   tools:context=".data_alumni.data_alumni_tambah_v2">
+
+    <LinearLayout
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silahkan Inputkan data Dibawah ini :"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:background="@drawable/border_left_background_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ScrollView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                >
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:visibility="gone"
+                                    android:id="@+id/layout_id_alumni"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/id_alumni"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Id Alumni " />
+                                </com.google.android.material.textfield.TextInputLayout>
+								
+                                                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_nama_depan"
+                                    android:layout_below="@+id/layout_iid_alumni"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/nama_depan"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Nama Depan  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_nama_belakang"
+                                    android:layout_below="@+id/layout_inama_depan"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/nama_belakang"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Nama Belakang  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_alamat"
+                                    android:layout_below="@+id/layout_inama_belakang"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/alamat"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Alamat  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_email"
+                                    android:layout_below="@+id/layout_ialamat"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/email"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Email  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_no_telepon"
+                                    android:layout_below="@+id/layout_iemail"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/no_telepon"
+                                        android:layout_height="wrap_content"
+                                        android:hint="No Telepon  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_nisn"
+                                    android:layout_below="@+id/layout_ino_telepon"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/nisn"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Nisn  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_id_sekolah"
+                                    android:layout_below="@+id/layout_inisn"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/id_sekolah"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Id Sekolah  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_jurusan"
+                                    android:layout_below="@+id/layout_iid_sekolah"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/jurusan"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Jurusan  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_tahun_masuk"
+                                    android:layout_below="@+id/layout_ijurusan"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/tahun_masuk"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Tahun Masuk  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_tahun_keluar"
+                                    android:layout_below="@+id/layout_itahun_masuk"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/tahun_keluar"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Tahun Keluar  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_jalur_penerimaan"
+                                    android:layout_below="@+id/layout_itahun_keluar"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/jalur_penerimaan"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Jalur Penerimaan  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_jenjang"
+                                    android:layout_below="@+id/layout_ijalur_penerimaan"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/jenjang"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Jenjang  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_linkedin"
+                                    android:layout_below="@+id/layout_ijenjang"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/linkedin"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Linkedin  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_instagram"
+                                    android:layout_below="@+id/layout_ilinkedin"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/instagram"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Instagram  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_facebook"
+                                    android:layout_below="@+id/layout_iinstagram"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/facebook"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Facebook  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_tempat_kerja"
+                                    android:layout_below="@+id/layout_ifacebook"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/tempat_kerja"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Tempat Kerja  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_jabatan_kerja"
+                                    android:layout_below="@+id/layout_itempat_kerja"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/jabatan_kerja"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Jabatan Kerja  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_alamat_kerja"
+                                    android:layout_below="@+id/layout_ijabatan_kerja"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/alamat_kerja"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Alamat Kerja  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_tahun_masuk_kerja"
+                                    android:layout_below="@+id/layout_ialamat_kerja"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/tahun_masuk_kerja"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Tahun Masuk Kerja  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_tahun_resign"
+                                    android:layout_below="@+id/layout_itahun_masuk_kerja"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/tahun_resign"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Tahun Resign  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_foto"
+                                    android:layout_below="@+id/layout_itahun_resign"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/foto"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Foto  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_username"
+                                    android:layout_below="@+id/layout_ifoto"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/username"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Username  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_password"
+                                    android:layout_below="@+id/layout_iusername"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/password"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Password  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+								
+                            </LinearLayout>
+
+                            <!--
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_weight="1"
+                                                            android:orientation="vertical">
+                                                                                    
+                                                                                                                                        <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Nama Depan " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Nama Belakang " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Alamat " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Email " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="No Telepon " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Nisn " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Id Sekolah " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jurusan " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tahun Masuk " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tahun Keluar " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jalur Penerimaan " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jenjang " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Linkedin " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Instagram " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Facebook " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tempat Kerja " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jabatan Kerja " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Alamat Kerja " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tahun Masuk Kerja " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tahun Resign " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Foto " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Username " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Password " />
+
+                                                            
+                                                        </LinearLayout>
+                            -->
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/simpan_putih"
+            android:backgroundTint="@color/color_detail"
+            android:textColor="#ffff"
+            android:text="  Tambah   " />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Yang Telah Diinputkan :"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/border_left_background_blue"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ScrollView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <HorizontalScrollView
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp">
+
+                                <LinearLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TableLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tablelayoutid"
+                                    >
+
+                                        <TableRow
+                                            android:id="@+id/rowlay"
+                                            android:background="@android:color/holo_blue_light"
+                                            android:padding="5dp">
+                                            <TextView
+                                                android:layout_width="40dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="#"/>
+									
+                                            <TextView
+                                                android:visibility="gone"
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Id Alumni " />
+									
+                                                                                        <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Nama Depan " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Nama Belakang " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Alamat " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Email " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="No Telepon " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Nisn " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Id Sekolah " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jurusan " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tahun Masuk " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tahun Keluar " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jalur Penerimaan " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jenjang " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Linkedin " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Instagram " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Facebook " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tempat Kerja " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jabatan Kerja " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Alamat Kerja " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tahun Masuk Kerja " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Tahun Resign " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Foto " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Username " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Password " />
+
+								
+								
+                                        </TableRow>
+
+                                        <ListView                                
+                                            android:id="@+id/cvdata_alumni"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+                                    </TableLayout>
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/tombol_simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/simpan_putih"
+            android:backgroundTint="@color/color_detail"
+            android:textColor="#ffff"
+            android:text="      Selesai     ">
+        </Button>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

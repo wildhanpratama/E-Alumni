@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+
+        <LinearLayout
+            android:id="@+id/linearNomor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_left_background_green"
+            android:gravity="center">
+
+            <TextView
+
+                android:id="@+id/txt_nomor"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text=""
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBaris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/id_alumni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/nama_depan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_alumni" />
+
+            <TextView
+                android:id="@+id/nama_belakang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_depan" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_belakang" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alamat" />
+
+            <TextView
+                android:id="@+id/no_telepon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email" />
+
+            <TextView
+                android:id="@+id/nisn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_telepon" />
+
+            <TextView
+                android:id="@+id/id_sekolah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nisn" />
+
+            <TextView
+                android:id="@+id/jurusan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_sekolah" />
+
+            <TextView
+                android:id="@+id/tahun_masuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jurusan" />
+
+            <TextView
+                android:id="@+id/tahun_keluar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tahun_masuk" />
+
+            <TextView
+                android:id="@+id/jalur_penerimaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tahun_keluar" />
+
+            <TextView
+                android:id="@+id/jenjang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jalur_penerimaan" />
+
+            <TextView
+                android:id="@+id/linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jenjang" />
+
+            <TextView
+                android:id="@+id/instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linkedin" />
+
+            <TextView
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instagram" />
+
+            <TextView
+                android:id="@+id/tempat_kerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facebook" />
+
+            <TextView
+                android:id="@+id/jabatan_kerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempat_kerja" />
+
+            <TextView
+                android:id="@+id/alamat_kerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jabatan_kerja" />
+
+            <TextView
+                android:id="@+id/tahun_masuk_kerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alamat_kerja" />
+
+            <TextView
+                android:id="@+id/tahun_resign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tahun_masuk_kerja" />
+
+            <TextView
+                android:id="@+id/foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tahun_resign" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foto" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearEdit"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tombol_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_edit"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:text="Edit"
+                android:textColor="@color/putih"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearHapus"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tombol_hapus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/color_hapus"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:text="Hapus"
+                android:textColor="@color/putih"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

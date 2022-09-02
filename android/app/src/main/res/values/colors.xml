@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F4124F</color>
+    <color name="colorPrimaryDark">#9F0D34</color>
+    <color name="colorAccent">#F4124F</color>
+    <color name="colorsplash">#F4124F</color>
+    <color name="grey">#F4124F</color>
+    <color name="putih">#e4e4e4</color>
+	<color name="color_tambah">#AE1941</color>
+    <color name="color_refresh">#9E0D34</color>
+    <color name="color_detail">#B50C3A</color>
+    <color name="color_edit">#BC0335</color>
+    <color name="color_hapus">#d50000</color>
+</resources>

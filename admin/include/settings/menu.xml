@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<humans>
+<!-- MASTER MENU -->
+<menu><id>A</id><s>0</s><t>s</t><i>fa fa-home</i><n>Home</n><l>../home/index.php</l></menu>
+<!-- SETTING -->
+<menu><id>B</id><s>0</s><t>m</t><i>fa fa-edit</i><n>Master Data</n><l>#</l></menu>
+<!-- <menu><id>C</id><s>0</s><t>m</t><i>fa fa-calendar</i><n>Laporan</n><l>#</l></menu> -->
+
+<!-- MASTERDATA -->
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Admin </n><l>../data_admin/index.php</l></menu> -->
+<menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Akreditas </n><l>../data_akreditas/index.php</l></menu>
+<menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Alumni </n><l>../data_alumni/index.php</l></menu>
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Berita </n><l>../data_berita/index.php</l></menu> -->
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Jawaban Akreditas </n><l>../data_jawaban_akreditas/index.php</l></menu> -->
+<menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Karyawan </n><l>../data_karyawan/index.php</l></menu>
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Kenangan </n><l>../data_kenangan/index.php</l></menu> -->
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Komentar Berita </n><l>../data_komentar_berita/index.php</l></menu> -->
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Komentar Kenangan </n><l>../data_komentar_kenangan/index.php</l></menu> -->
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Like Berita </n><l>../data_like_berita/index.php</l></menu> -->
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Like Kenangan </n><l>../data_like_kenangan/index.php</l></menu> -->
+<!-- <menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Pertanyaan Akreditas </n><l>../data_pertanyaan_akreditas/index.php</l></menu> -->
+<menu><id></id><s>B</s><t>sm</t><i>fa fa-edit</i><n>Data Sekolah </n><l>../data_sekolah/index.php</l></menu>
+
+<!-- LAPORAN -->
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Admin </n><l>../data_admin/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Akreditas </n><l>../data_akreditas/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Alumni </n><l>../data_alumni/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Berita </n><l>../data_berita/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Jawaban Akreditas </n><l>../data_jawaban_akreditas/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Karyawan </n><l>../data_karyawan/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Kenangan </n><l>../data_kenangan/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Komentar Berita </n><l>../data_komentar_berita/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Komentar Kenangan </n><l>../data_komentar_kenangan/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Like Berita </n><l>../data_like_berita/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Like Kenangan </n><l>../data_like_kenangan/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Pertanyaan Akreditas </n><l>../data_pertanyaan_akreditas/index.php?input=cetak</l></menu>
+<menu><id></id><s>C</s><t>sm</t><i>fa fa-calendar</i><n>Data Sekolah </n><l>../data_sekolah/index.php?input=cetak</l></menu>
+
+
+</humans>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.aplikasi.namaaplikasi">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.activity.splashscreen_activity"
+            android:exported="true"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"
+
+                    />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.activity.lokasianda_activity"
+            android:label="@string/title_activity_lokasianda_"
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+        <activity
+            android:name=".activity.home_activity"
+            android:label="Webview"
+            android:parentActivityName=".home.home_activity" />
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.activity.loading"
+            android:label="Loading"
+            tools:ignore="Instantiatable" />
+
+        <activity android:name="com.project.aplikasi.namaaplikasi.activity.panduan_activity" />
+        <activity android:name="com.project.aplikasi.namaaplikasi.activity.qrcode_activity" />
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.activity.profile_activity"
+            android:label="Profile"
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+        <activity android:name="com.project.aplikasi.namaaplikasi.activity.login_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.home.home_activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- ACTIVITY API -->
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_admin.data_admin_edit"
+            android:label="Edit Data Admin "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_admin.data_admin_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_admin.data_admin_tambah"
+            android:label="Tambah Data Admin "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_admin.data_admin_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_admin.data_admin_tambah_v2"
+            android:label="Tambah Data Admin "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_admin.data_admin_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_admin.data_admin_activity"
+            android:label="Data Admin "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_admin.data_admin_activity_v2"
+            android:label="Data Admin "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_edit"
+            android:label="Edit Data Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_tambah"
+            android:label="Tambah Data Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_tambah_v2"
+            android:label="Tambah Data Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_activity"
+            android:label="Data Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_activity_v2"
+            android:label="Data Akreditas "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_edit"
+            android:label="Edit Data Alumni "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_tambah"
+            android:label="Pendaftaran Alumni "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_tambah_v2"
+            android:label="Tambah Data Alumni "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_activity"
+            android:label="Data Alumni "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_activity_v2"
+            android:label="Data Alumni "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_berita.data_berita_edit"
+            android:label="Edit Data Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_berita.data_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_berita.data_berita_tambah"
+            android:label="Tambah Data Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_berita.data_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_berita.data_berita_tambah_v2"
+            android:label="Tambah Data Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_berita.data_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_berita.data_berita_activity"
+            android:label="Data Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_berita.data_berita_activity_v2"
+            android:label="Data Berita "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_edit"
+            android:label="Edit Data Jawaban Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_tambah"
+            android:label="Tambah Data Jawaban Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_tambah_v2"
+            android:label="Tambah Data Jawaban Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_activity"
+            android:label="Data Jawaban Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_activity_v2"
+            android:label="Data Jawaban Akreditas "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_edit"
+            android:label="Edit Data Karyawan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_tambah"
+            android:label="Tambah Data Karyawan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_tambah_v2"
+            android:label="Tambah Data Karyawan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_activity"
+            android:label="Data Karyawan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_activity_v2"
+            android:label="Data Karyawan "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_edit"
+            android:label="Edit Data Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_tambah"
+            android:label="Tambah Data Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_tambah_v2"
+            android:label="Tambah Data Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_activity"
+            android:label="Data Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_activity_v2"
+            android:label="Data Kenangan "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_edit"
+            android:label="Edit Data Komentar Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_tambah"
+            android:label="Tambah Data Komentar Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_tambah_v2"
+            android:label="Tambah Data Komentar Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_activity"
+            android:label="Data Komentar Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_activity_v2"
+            android:label="Data Komentar Berita "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_edit"
+            android:label="Edit Data Komentar Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_tambah"
+            android:label="Tambah Data Komentar Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_tambah_v2"
+            android:label="Tambah Data Komentar Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_activity"
+            android:label="Data Komentar Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_activity_v2"
+            android:label="Data Komentar Kenangan "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_edit"
+            android:label="Edit Data Like Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_tambah"
+            android:label="Tambah Data Like Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_tambah_v2"
+            android:label="Tambah Data Like Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_activity"
+            android:label="Data Like Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_activity_v2"
+            android:label="Data Like Berita "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_edit"
+            android:label="Edit Data Like Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_tambah"
+            android:label="Tambah Data Like Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_tambah_v2"
+            android:label="Tambah Data Like Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_activity"
+            android:label="Data Like Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_activity_v2"
+            android:label="Data Like Kenangan "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_edit"
+            android:label="Edit Data Pertanyaan Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_tambah"
+            android:label="Tambah Data Pertanyaan Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_tambah_v2"
+            android:label="Tambah Data Pertanyaan Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_activity"
+            android:label="Data Pertanyaan Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_activity_v2"
+            android:label="Data Pertanyaan Akreditas "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_edit"
+            android:label="Edit Data Sekolah "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_tambah"
+            android:label="Tambah Data Sekolah "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_tambah_v2"
+            android:label="Tambah Data Sekolah "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_activity"
+            android:label="Data Sekolah "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_activity_v2"
+            android:label="Data Sekolah "
+            android:parentActivityName=".home.home_activity" />
+
+
+        <!-- ACTIVITY SQLITE -->
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_admin_sqlite.data_admin_sqlite_edit"
+            android:label="Edit Data Admin "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_admin_sqlite.data_admin_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_admin_sqlite.data_admin_sqlite_tambah"
+            android:label="Tambah Data Admin "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_admin_sqlite.data_admin_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_admin_sqlite.data_admin_sqlite_activity"
+            android:label="Data Admin "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_akreditas_sqlite.data_akreditas_sqlite_edit"
+            android:label="Edit Data Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_akreditas_sqlite.data_akreditas_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_akreditas_sqlite.data_akreditas_sqlite_tambah"
+            android:label="Tambah Data Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_akreditas_sqlite.data_akreditas_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_akreditas_sqlite.data_akreditas_sqlite_activity"
+            android:label="Data Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_alumni_sqlite.data_alumni_sqlite_edit"
+            android:label="Edit Data Alumni "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_alumni_sqlite.data_alumni_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_alumni_sqlite.data_alumni_sqlite_tambah"
+            android:label="Tambah Data Alumni "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_alumni_sqlite.data_alumni_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_alumni_sqlite.data_alumni_sqlite_activity"
+            android:label="Data Alumni "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_berita_sqlite.data_berita_sqlite_edit"
+            android:label="Edit Data Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_berita_sqlite.data_berita_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_berita_sqlite.data_berita_sqlite_tambah"
+            android:label="Tambah Data Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_berita_sqlite.data_berita_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_berita_sqlite.data_berita_sqlite_activity"
+            android:label="Data Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas_sqlite.data_jawaban_akreditas_sqlite_edit"
+            android:label="Edit Data Jawaban Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas_sqlite.data_jawaban_akreditas_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas_sqlite.data_jawaban_akreditas_sqlite_tambah"
+            android:label="Tambah Data Jawaban Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas_sqlite.data_jawaban_akreditas_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas_sqlite.data_jawaban_akreditas_sqlite_activity"
+            android:label="Data Jawaban Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_karyawan_sqlite.data_karyawan_sqlite_edit"
+            android:label="Edit Data Karyawan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_karyawan_sqlite.data_karyawan_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_karyawan_sqlite.data_karyawan_sqlite_tambah"
+            android:label="Tambah Data Karyawan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_karyawan_sqlite.data_karyawan_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_karyawan_sqlite.data_karyawan_sqlite_activity"
+            android:label="Data Karyawan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_kenangan_sqlite.data_kenangan_sqlite_edit"
+            android:label="Edit Data Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_kenangan_sqlite.data_kenangan_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_kenangan_sqlite.data_kenangan_sqlite_tambah"
+            android:label="Tambah Data Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_kenangan_sqlite.data_kenangan_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_kenangan_sqlite.data_kenangan_sqlite_activity"
+            android:label="Data Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita_sqlite.data_komentar_berita_sqlite_edit"
+            android:label="Edit Data Komentar Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_berita_sqlite.data_komentar_berita_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita_sqlite.data_komentar_berita_sqlite_tambah"
+            android:label="Tambah Data Komentar Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_berita_sqlite.data_komentar_berita_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita_sqlite.data_komentar_berita_sqlite_activity"
+            android:label="Data Komentar Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan_sqlite.data_komentar_kenangan_sqlite_edit"
+            android:label="Edit Data Komentar Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_kenangan_sqlite.data_komentar_kenangan_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan_sqlite.data_komentar_kenangan_sqlite_tambah"
+            android:label="Tambah Data Komentar Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_komentar_kenangan_sqlite.data_komentar_kenangan_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan_sqlite.data_komentar_kenangan_sqlite_activity"
+            android:label="Data Komentar Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_berita_sqlite.data_like_berita_sqlite_edit"
+            android:label="Edit Data Like Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_berita_sqlite.data_like_berita_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_berita_sqlite.data_like_berita_sqlite_tambah"
+            android:label="Tambah Data Like Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_berita_sqlite.data_like_berita_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_berita_sqlite.data_like_berita_sqlite_activity"
+            android:label="Data Like Berita "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan_sqlite.data_like_kenangan_sqlite_edit"
+            android:label="Edit Data Like Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_kenangan_sqlite.data_like_kenangan_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan_sqlite.data_like_kenangan_sqlite_tambah"
+            android:label="Tambah Data Like Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_like_kenangan_sqlite.data_like_kenangan_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan_sqlite.data_like_kenangan_sqlite_activity"
+            android:label="Data Like Kenangan "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas_sqlite.data_pertanyaan_akreditas_sqlite_edit"
+            android:label="Edit Data Pertanyaan Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas_sqlite.data_pertanyaan_akreditas_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas_sqlite.data_pertanyaan_akreditas_sqlite_tambah"
+            android:label="Tambah Data Pertanyaan Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas_sqlite.data_pertanyaan_akreditas_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas_sqlite.data_pertanyaan_akreditas_sqlite_activity"
+            android:label="Data Pertanyaan Akreditas "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_sekolah_sqlite.data_sekolah_sqlite_edit"
+            android:label="Edit Data Sekolah "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_sekolah_sqlite.data_sekolah_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_sekolah_sqlite.data_sekolah_sqlite_tambah"
+            android:label="Tambah Data Sekolah "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.data_sekolah_sqlite.data_sekolah_sqlite_activity" />
+
+        <activity
+            android:name="com.project.aplikasi.namaaplikasi.data_sekolah_sqlite.data_sekolah_sqlite_activity"
+            android:label="Data Sekolah "
+            android:parentActivityName="com.project.aplikasi.namaaplikasi.home.home_activity" />
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.project.aplikasi.namaaplikasi.home.home_fragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment" />
+    <activity
+        android:id="@+id/nav_kiri1"
+        android:name="com.project.aplikasi.namaaplikasi.activity.profile_activity"
+        android:label="@string/menu_kiri1"
+        tools:layout="@layout/profile_activity" />
+
+    <activity
+        android:id="@+id/nav_kiri3"
+        android:name="com.project.aplikasi.namaaplikasi.activity.lokasianda_activity"
+        android:label="@string/menu_kiri2"
+        tools:layout="@layout/lokasianda_activity" />
+    <activity
+        android:id="@+id/nav_kiri4"
+        android:name="com.project.aplikasi.namaaplikasi.activity.panduan_activity"
+        android:label="@string/menu_kiri3"
+        tools:layout="@layout/panduan_activity" />
+    <activity
+        android:id="@+id/nav_kiri5"
+        android:name="com.project.aplikasi.namaaplikasi.activity.login_activity"
+        android:label="@string/menu_kiri4"
+        tools:layout="@layout/login_activity" />
+		
+    <activity
+        android:id="@+id/nav_data_admin"
+        android:name="com.project.aplikasi.namaaplikasi.data_admin.data_admin_activity_v2"
+        android:label="Data Admin "
+        tools:layout="@layout/data_admin_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_akreditas"
+        android:name="com.project.aplikasi.namaaplikasi.data_akreditas.data_akreditas_activity_v2"
+        android:label="Data Akreditas "
+        tools:layout="@layout/data_akreditas_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_alumni"
+        android:name="com.project.aplikasi.namaaplikasi.data_alumni.data_alumni_activity_v2"
+        android:label="Data Alumni "
+        tools:layout="@layout/data_alumni_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_berita"
+        android:name="com.project.aplikasi.namaaplikasi.data_berita.data_berita_activity_v2"
+        android:label="Data Berita "
+        tools:layout="@layout/data_berita_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_jawaban_akreditas"
+        android:name="com.project.aplikasi.namaaplikasi.data_jawaban_akreditas.data_jawaban_akreditas_activity_v2"
+        android:label="Data Jawaban Akreditas "
+        tools:layout="@layout/data_jawaban_akreditas_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_karyawan"
+        android:name="com.project.aplikasi.namaaplikasi.data_karyawan.data_karyawan_activity_v2"
+        android:label="Data Karyawan "
+        tools:layout="@layout/data_karyawan_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_kenangan"
+        android:name="com.project.aplikasi.namaaplikasi.data_kenangan.data_kenangan_activity_v2"
+        android:label="Data Kenangan "
+        tools:layout="@layout/data_kenangan_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_komentar_berita"
+        android:name="com.project.aplikasi.namaaplikasi.data_komentar_berita.data_komentar_berita_activity_v2"
+        android:label="Data Komentar Berita "
+        tools:layout="@layout/data_komentar_berita_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_komentar_kenangan"
+        android:name="com.project.aplikasi.namaaplikasi.data_komentar_kenangan.data_komentar_kenangan_activity_v2"
+        android:label="Data Komentar Kenangan "
+        tools:layout="@layout/data_komentar_kenangan_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_like_berita"
+        android:name="com.project.aplikasi.namaaplikasi.data_like_berita.data_like_berita_activity_v2"
+        android:label="Data Like Berita "
+        tools:layout="@layout/data_like_berita_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_like_kenangan"
+        android:name="com.project.aplikasi.namaaplikasi.data_like_kenangan.data_like_kenangan_activity_v2"
+        android:label="Data Like Kenangan "
+        tools:layout="@layout/data_like_kenangan_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_pertanyaan_akreditas"
+        android:name="com.project.aplikasi.namaaplikasi.data_pertanyaan_akreditas.data_pertanyaan_akreditas_activity_v2"
+        android:label="Data Pertanyaan Akreditas "
+        tools:layout="@layout/data_pertanyaan_akreditas_activity_v2" />
+    <activity
+        android:id="@+id/nav_data_sekolah"
+        android:name="com.project.aplikasi.namaaplikasi.data_sekolah.data_sekolah_activity_v2"
+        android:label="Data Sekolah "
+        tools:layout="@layout/data_sekolah_activity_v2" />
+
+		
+</navigation>

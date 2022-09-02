@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/bawah_1"
+            android:icon="@drawable/ic_baseline_newspaper_24"
+            android:title="Berita"
+    />
+
+    <item
+            android:id="@+id/bawah_2"
+            android:icon="@drawable/icon2"
+            android:title="Kenangan"
+    />
+
+    <item
+            android:id="@+id/bawah_3"
+            android:icon="@drawable/icon3"
+            android:title="Posting"
+    />
+
+    <item
+            android:id="@+id/bawah_4"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Profil"
+    />
+
+    <item
+            android:id="@+id/bawah_5"
+            android:icon="@drawable/ic_baseline_file_copy_24"
+            android:title="Akreditasi"
+    />
+
+</menu>
